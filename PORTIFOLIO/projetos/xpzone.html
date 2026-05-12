@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XP Zone — Barbara Costa</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.proj-hero{padding:56px 0 48px;border-bottom:1px solid var(--areia)}.breadcrumb{font-family:var(--font-label);font-size:11px;letter-spacing:2px;color:var(--trigo);display:flex;align-items:center;gap:8px;margin-bottom:28px}.breadcrumb a{color:var(--trigo);text-decoration:none;transition:color .2s}.breadcrumb a:hover{color:var(--terracota)}.proj-hero h1{text-align:left;font-size:clamp(36px,6vw,58px);max-width:680px;margin-bottom:16px;line-height:1.1}.proj-tagline{font-size:18px;color:var(--caramelo);max-width:540px;margin-bottom:36px}.meta-row{display:flex;gap:12px;flex-wrap:wrap}.meta-badge{background:white;border:1px solid var(--areia);border-radius:8px;padding:10px 18px;display:flex;flex-direction:column;gap:2px}.meta-badge .meta-label{font-family:var(--font-label);font-size:10px;letter-spacing:2px;color:var(--salvia)}.meta-badge .meta-value{font-family:var(--font-body);font-size:14px;color:var(--carvao);font-weight:500}.proj-cover{width:100%;border-radius:12px;overflow:hidden;margin:48px 0}.proj-cover img{width:100%;height:auto;display:block;border-radius:12px}.case-section{padding:56px 0;border-bottom:1px solid var(--areia)}.section-number{font-family:var(--font-label);font-size:11px;letter-spacing:3px;color:var(--terracota);margin-bottom:6px;display:block}.case-section h2{font-size:32px;margin-bottom:20px}.case-section p{max-width:640px;font-size:16px;line-height:1.85;color:#5a4a3a;margin-bottom:16px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:32px}.two-col-3-2{display:grid;grid-template-columns:3fr 2fr;gap:40px;align-items:start}.insight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}.insight-card{background:white;border:1px solid var(--areia);border-radius:10px;padding:24px;border-top:3px solid var(--terracota)}.insight-card .insight-icon{font-size:24px;margin-bottom:12px;display:block}.insight-card h4{font-family:var(--font-display);font-size:16px;color:var(--carvao);margin-bottom:8px}.insight-card p{font-size:14px;color:var(--caramelo);margin:0;max-width:100%}.process-steps{display:flex;flex-direction:column;gap:16px;margin-top:32px}.process-step{display:flex;gap:24px;align-items:flex-start}.step-num{font-family:var(--font-label);font-size:28px;color:var(--areia);line-height:1;min-width:36px}.step-content h4{font-family:var(--font-display);font-size:17px;color:var(--carvao);margin-bottom:4px}.step-content p{font-size:14px;color:var(--caramelo);margin:0;max-width:100%}.img-placeholder{width:100%;border-radius:10px;background:linear-gradient(135deg,var(--creme) 0%,var(--areia) 100%);display:flex;align-items:center;justify-content:center;font-family:var(--font-script);color:var(--trigo);font-size:16px}.img-placeholder.tall{aspect-ratio:4/3}.img-placeholder.wide{aspect-ratio:16/7}.metrics-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}.metric-card{background:var(--carvao);border-radius:10px;padding:28px 24px;text-align:center}.metric-card .metric-num{font-family:var(--font-display);font-size:42px;font-style:italic;color:var(--trigo);line-height:1;display:block;margin-bottom:8px}.metric-card .metric-desc{font-family:var(--font-body);font-size:13px;color:#9a8a7a;margin:0;max-width:100%}.learnings{background:white;border:1px solid var(--areia);border-radius:12px;padding:36px;margin-top:32px}.learnings h3{font-size:18px;color:var(--terra);margin-bottom:20px}.learning-item{display:flex;gap:16px;margin-bottom:18px;align-items:flex-start}.learning-item:last-child{margin-bottom:0}.learning-dot{width:8px;height:8px;border-radius:50%;background:var(--terracota);margin-top:7px;flex-shrink:0}.learning-item p{font-size:15px;color:#5a4a3a;margin:0;max-width:100%}.proj-nav{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:64px;padding-top:40px;border-top:1px solid var(--areia)}.proj-nav-item{background:white;border:1px solid var(--areia);border-radius:10px;padding:24px;text-decoration:none;transition:box-shadow .2s,transform .2s,border-color .2s}.proj-nav-item:hover{box-shadow:0 8px 32px rgba(196,92,46,.12);transform:translateY(-3px);border-color:var(--trigo)}.proj-nav-item .nav-dir{font-family:var(--font-label);font-size:11px;letter-spacing:2px;color:var(--salvia);margin-bottom:6px;display:block}.proj-nav-item h4{font-family:var(--font-display);font-size:18px;color:var(--carvao);margin-bottom:4px}.proj-nav-item p{font-size:13px;color:var(--caramelo);margin:0}.proj-nav-item.next{text-align:right}.tag-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.tag{background:var(--creme);border:1px solid var(--areia);border-radius:20px;padding:6px 14px;font-family:var(--font-label);font-size:11px;letter-spacing:1px;color:var(--caramelo)}.label-tag{font-family:var(--font-label);font-size:10px;letter-spacing:2px;color:var(--salvia)}.responsive-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px;align-items:start}.responsive-item{text-align:center}.responsive-item .device-label{font-family:var(--font-label);font-size:11px;letter-spacing:2px;color:var(--salvia);margin-bottom:12px;display:block}.hint{font-size:13px;color:var(--caramelo);margin-top:16px;padding:12px 16px;background:var(--creme);border-radius:8px;border-left:3px solid var(--trigo)}@media(max-width:700px){.two-col,.two-col-3-2,.insight-grid,.metrics-row,.responsive-grid{grid-template-columns:1fr}.proj-nav{grid-template-columns:1fr}}
+</style>
+<link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+
+<div class="container">
+
+  <header>
+    <h2>Barbara Costa</h2>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../portfolio.html" class="active">Portfólio</a>
+      <a href="../contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <div class="proj-hero fade-in">
+    <div class="breadcrumb"><a href="../portfolio.html">Portfólio</a><span></span><span>XP Zone</span></div>
+    <h1>XP Zone</h1>
+    <p class="proj-tagline">Plataforma para comunidade gamer — UX/UI Design · UX Writing · Landing Page</p>
+    <div class="meta-row">
+      <div class="meta-badge"><span class="meta-label">Tipo</span><span class="meta-value">UX/UI Design · UX Writing · Landing Page</span></div>
+      <div class="meta-badge"><span class="meta-label">Ferramentas</span><span class="meta-value">Figma · Photoshop · Ferramentas de IA</span></div>
+      <div class="meta-badge"><span class="meta-label">Duração</span><span class="meta-value">Projeto conceitual — 2026</span></div>
+      <div class="meta-badge"><span class="meta-label">Papel</span><span class="meta-value">UX/UI Design · UX Writing · Interface Design</span></div>
+    </div>
+  </div>
+
+  <!-- CAPA -->
+  <div class="proj-cover fade-in">
+    <img src="Frame_511.png" alt="XP Zone — visão geral do projeto">
+  </div>
+
+  <!-- 01 — VISÃO GERAL -->
+  <div class="case-section fade-in">
+    <span class="section-number">01 — VISÃO GERAL</span>
+    <h2>Visão geral do projeto</h2>
+    <div class="two-col-3-2">
+      <div>
+        <p><strong>XP Zone</strong> é uma plataforma digital desenvolvida para conectar gamers da mesma cidade, permitindo comprar, vender e trocar jogos, além de incentivar a interação entre membros da comunidade.</p>
+        <p>O projeto é conceitual e foi desenvolvido em 2026 como uma <strong>landing page / plataforma web</strong> — pensada para apresentar a proposta da plataforma, explicar seu funcionamento e converter novos usuários.</p>
+        <div class="tag-row">
+          <span class="tag">UX/UI DESIGN</span>
+          <span class="tag">UX WRITING</span>
+          <span class="tag">INTERFACE DESIGN</span>
+        </div>
+      </div>
+      <div>
+        <p style="max-width:100%;"><strong>Meu papel</strong></p>
+        <div class="tag-row" style="margin-top:8px;">
+          <span class="tag">UX/UI DESIGN</span>
+          <span class="tag">UX WRITING</span>
+          <span class="tag">INTERFACE DESIGN</span>
+        </div>
+        <p style="max-width:100%;margin-top:24px;"><strong>Ferramentas</strong></p>
+        <div class="tag-row" style="margin-top:8px;">
+          <span class="tag">FIGMA</span>
+          <span class="tag">PHOTOSHOP</span>
+          <span class="tag">FERRAMENTAS DE IA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 02 — OBJETIVO -->
+  <div class="case-section fade-in">
+    <span class="section-number">02 — OBJETIVO DO PROJETO</span>
+    <h2>Objetivo do Projeto</h2>
+    <p>Criar uma landing page capaz de:</p>
+    <div class="insight-grid">
+      <div class="insight-card"><span class="insight-icon">◎</span><h4>Apresentar a proposta da plataforma</h4><p>Comunicar de forma clara e imersiva o que é a XP Zone e a quem ela se destina.</p></div>
+      <div class="insight-card"><span class="insight-icon">✦</span><h4>Explicar o funcionamento da comunidade</h4><p>Mostrar como funciona a rede de gamers — compra, venda, troca e interação local.</p></div>
+      <div class="insight-card"><span class="insight-icon">◈</span><h4>Incentivar novos usuários a participar</h4><p>Guiar o visitante com CTAs estratégicos e proposta de valor clara e direta.</p></div>
+    </div>
+    <div class="insight-grid" style="margin-top:16px;">
+      <div class="insight-card"><span class="insight-icon">⊕</span><h4>Facilitar a compra, venda e troca de jogos</h4><p>Estruturar a jornada para que o caminho até a ação seja simples e sem fricção.</p></div>
+      <div class="insight-card" style="background:transparent;border:1px dashed var(--areia);border-top:1px dashed var(--areia);"></div>
+      <div class="insight-card" style="background:transparent;border:1px dashed var(--areia);border-top:1px dashed var(--areia);"></div>
+    </div>
+  </div>
+
+  <!-- 03 — WIREFRAMES -->
+  <div class="case-section fade-in">
+    <span class="section-number">03 — WIREFRAMES</span>
+    <h2>Wireframes</h2>
+    <p>Os wireframes foram utilizados para estruturar a arquitetura da landing page e definir a hierarquia das informações antes do design visual final.</p>
+    <p>Foram mapeados os blocos principais de conteúdo — hero, comunidade, recompensas, card zone e CTA — garantindo que o fluxo de conversão estivesse bem resolvido antes de partir para o visual.</p>
+    <div class="two-col" style="margin-top:32px;">
+      <div class="img-placeholder tall">wireframes · mobile</div>
+      <div class="img-placeholder tall">wireframes · desktop</div>
+    </div>
+    <p class="hint">💡 Substitua os placeholders acima pelas imagens dos wireframes exportadas do Figma.</p>
+  </div>
+
+  <!-- 04 — UX WRITING -->
+  <div class="case-section fade-in">
+    <span class="section-number">04 — UX WRITING</span>
+    <h2>UX Writing</h2>
+    <div class="two-col-3-2">
+      <div>
+        <p>Durante o desenvolvimento da landing page foram definidas mensagens claras e objetivas para apresentar os benefícios da plataforma e guiar o usuário durante a navegação.</p>
+        <p>O tom de voz escolhido é direto, energético e próximo — alinhado ao universo gamer e à proposta de comunidade da XP Zone. Cada microcopy foi pensado para reduzir fricção e incentivar a ação.</p>
+        <div class="process-steps">
+          <div class="process-step"><span class="step-num">—</span><div class="step-content"><h4>Tom de voz</h4><p>Direto, energético e próximo ao universo gamer. Sem jargão corporativo.</p></div></div>
+          <div class="process-step"><span class="step-num">—</span><div class="step-content"><h4>Headlines</h4><p>Foco em benefício imediato e chamada para ação clara em cada seção.</p></div></div>
+          <div class="process-step"><span class="step-num">—</span><div class="step-content"><h4>Microcopy</h4><p>Textos de botão, labels e mensagens de suporte que reduzem dúvidas e aumentam a conversão.</p></div></div>
+        </div>
+      </div>
+      <div class="img-placeholder tall">UX Writing · telas</div>
+    </div>
+  </div>
+
+  <!-- 05 — DESIGN SYSTEM -->
+  <div class="case-section fade-in">
+    <span class="section-number">05 — DESIGN SYSTEM</span>
+    <h2>Design System</h2>
+    <div class="two-col-3-2">
+      <div>
+        <p>Foi criado um design system para garantir consistência visual e facilitar a escalabilidade da interface.</p>
+        <p>O sistema inclui paleta de cores, tipografia, componentes reutilizáveis e estados de interação — pensados para o universo gamer com uma estética imersiva e escura.</p>
+        <div class="tag-row" style="margin-top:20px;">
+          <span class="tag">PALETA DE CORES</span>
+          <span class="tag">TIPOGRAFIA</span>
+          <span class="tag">COMPONENTES</span>
+          <span class="tag">ÍCONES</span>
+          <span class="tag">ESTADOS</span>
+          <span class="tag">GRID</span>
+        </div>
+      </div>
+      <div class="img-placeholder tall">Design System · preview</div>
+    </div>
+  </div>
+
+  <!-- 06 — DETALHES DA INTERFACE -->
+  <div class="case-section fade-in">
+    <span class="section-number">06 — DETALHES DA INTERFACE</span>
+    <h2>Detalhes da Interface</h2>
+    <p>A landing page foi estruturada em seções estratégicas, cada uma com um papel claro na jornada do usuário:</p>
+    <div class="insight-grid">
+      <div class="insight-card"><span class="insight-icon">🎮</span><h4>Hero Section</h4><p>Apresentação imersiva da plataforma com proposta de valor imediata e CTA principal em destaque.</p></div>
+      <div class="insight-card"><span class="insight-icon">👥</span><h4>Comunidade Gamer</h4><p>Seção que evidencia a rede de jogadores e o diferencial da conexão local entre usuários.</p></div>
+      <div class="insight-card"><span class="insight-icon">⭐</span><h4>Sistema de Recompensas (XP)</h4><p>Explicação do sistema de pontos que incentiva a participação ativa na plataforma.</p></div>
+    </div>
+    <div class="insight-grid" style="margin-top:16px;">
+      <div class="insight-card"><span class="insight-icon">🃏</span><h4>Card Zone</h4><p>Seção de compra, venda e troca de jogos — o coração funcional da plataforma.</p></div>
+      <div class="insight-card" style="background:transparent;border:1px dashed var(--areia);border-top:1px dashed var(--areia);"></div>
+      <div class="insight-card" style="background:transparent;border:1px dashed var(--areia);border-top:1px dashed var(--areia);"></div>
+    </div>
+    <div class="two-col" style="margin-top:32px;">
+      <div class="img-placeholder tall">Card Zone · tela</div>
+      <div class="img-placeholder tall">Hero Section · tela</div>
+    </div>
+    <p class="hint">💡 Substitua os placeholders pelas telas exportadas do Figma — Card Zone, Hero, Comunidade e Recompensas.</p>
+  </div>
+
+  <!-- 07 — RESPONSIVIDADE -->
+  <div class="case-section fade-in">
+    <span class="section-number">07 — RESPONSIVIDADE</span>
+    <h2>Responsividade</h2>
+    <p>A interface foi adaptada para diferentes dispositivos, garantindo uma experiência consistente em desktop, tablet e mobile.</p>
+    <div class="responsive-grid">
+      <div class="responsive-item">
+        <span class="device-label">DESKTOP</span>
+        <div class="img-placeholder" style="aspect-ratio:16/9;">desktop · tela</div>
+      </div>
+      <div class="responsive-item">
+        <span class="device-label">TABLET</span>
+        <div class="img-placeholder" style="aspect-ratio:3/4;max-width:220px;margin:0 auto;">tablet · tela</div>
+      </div>
+      <div class="responsive-item">
+        <span class="device-label">MOBILE</span>
+        <div class="img-placeholder" style="aspect-ratio:9/18;max-width:120px;margin:0 auto;">mobile · tela</div>
+      </div>
+    </div>
+    <p class="hint">💡 Substitua pelos mockups de responsividade exportados do Figma.</p>
+  </div>
+
+  <!-- 08 — CONCLUSÃO -->
+  <div class="case-section fade-in">
+    <span class="section-number">08 — CONCLUSÃO</span>
+    <h2>Conclusão</h2>
+    <p>O projeto resultou em uma landing page imersiva e alinhada ao universo gamer, facilitando a compreensão da proposta da XP Zone e incentivando a participação na comunidade.</p>
+    <p>Durante o desenvolvimento foi possível aplicar conceitos de UX Writing, arquitetura de informação e design system para construir uma experiência clara e consistente.</p>
+    <div class="metrics-row">
+      <div class="metric-card"><span class="metric-num">4</span><p class="metric-desc">seções estratégicas mapeadas</p></div>
+      <div class="metric-card"><span class="metric-num">3</span><p class="metric-desc">breakpoints de responsividade</p></div>
+      <div class="metric-card"><span class="metric-num">1</span><p class="metric-desc">design system criado do zero</p></div>
+    </div>
+    <div class="learnings">
+      <h3>O que aprendi nesse projeto</h3>
+      <div class="learning-item"><div class="learning-dot"></div><p>Construir presença digital do zero para um nicho específico exige entender a linguagem e os valores da comunidade — o briefing é o projeto.</p></div>
+      <div class="learning-item"><div class="learning-dot"></div><p>UX Writing e design visual precisam trabalhar juntos desde o início: a copy define o ritmo da interface, e a interface dá força à copy.</p></div>
+      <div class="learning-item"><div class="learning-dot"></div><p>Um design system bem definido desde o wireframe garante coerência em todos os breakpoints e acelera a fase de refinamento visual.</p></div>
+    </div>
+  </div>
+
+  <div class="cta-banner">
+    <h2>Gostou desse projeto?</h2>
+    <p>Posso criar algo estratégico para o seu negócio.</p>
+    <a href="../contato.html" class="btn">🚀 Falar comigo</a>
+  </div>
+
+  <div class="proj-nav">
+    <a href="outubrorosa.html" class="proj-nav-item"><span class="nav-dir">← ANTERIOR</span><h4>Campanha Outubro Rosa</h4><p>Campanha · Design Social</p></a>
+    <a href="fitforall.html" class="proj-nav-item next"><span class="nav-dir">PRÓXIMO →</span><h4>Fit For All</h4><p>UX/UI · App Mobile</p></a>
+  </div>
+
+</div>
+</body>
+</html>
