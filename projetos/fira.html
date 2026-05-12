@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redesign FIRA Brasil — Barbara Costa</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+.proj-hero{padding:56px 0 48px;border-bottom:1px solid var(--areia)}.breadcrumb{font-family:var(--font-label);font-size:11px;letter-spacing:2px;color:var(--trigo);display:flex;align-items:center;gap:8px;margin-bottom:28px}.breadcrumb a{color:var(--trigo);text-decoration:none;transition:color .2s}.breadcrumb a:hover{color:var(--terracota)}.proj-hero h1{text-align:left;font-size:clamp(36px,6vw,58px);max-width:680px;margin-bottom:16px;line-height:1.1}.proj-tagline{font-size:18px;color:var(--caramelo);max-width:540px;margin-bottom:36px}.meta-row{display:flex;gap:12px;flex-wrap:wrap}.meta-badge{background:white;border:1px solid var(--areia);border-radius:8px;padding:10px 18px;display:flex;flex-direction:column;gap:2px}.meta-badge .meta-label{font-family:var(--font-label);font-size:10px;letter-spacing:2px;color:var(--salvia)}.meta-badge .meta-value{font-family:var(--font-body);font-size:14px;color:var(--carvao);font-weight:500}.proj-cover-placeholder{width:100%;border-radius:12px;aspect-ratio:16/7;background:linear-gradient(135deg,var(--areia) 0%,var(--trigo) 100%);display:flex;align-items:center;justify-content:center;margin:48px 0;font-family:var(--font-script);font-size:22px;color:var(--caramelo)}.case-section{padding:56px 0;border-bottom:1px solid var(--areia)}.section-number{font-family:var(--font-label);font-size:11px;letter-spacing:3px;color:var(--terracota);margin-bottom:6px;display:block}.case-section h2{font-size:32px;margin-bottom:20px}.case-section p{max-width:640px;font-size:16px;line-height:1.85;color:#5a4a3a;margin-bottom:16px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:32px}.two-col-3-2{display:grid;grid-template-columns:3fr 2fr;gap:40px;align-items:start}.insight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}.insight-card{background:white;border:1px solid var(--areia);border-radius:10px;padding:24px;border-top:3px solid var(--terracota)}.insight-card .insight-icon{font-size:24px;margin-bottom:12px;display:block}.insight-card h4{font-family:var(--font-display);font-size:16px;color:var(--carvao);margin-bottom:8px}.insight-card p{font-size:14px;color:var(--caramelo);margin:0;max-width:100%}.process-steps{display:flex;flex-direction:column;gap:16px;margin-top:32px}.process-step{display:flex;gap:24px;align-items:flex-start}.step-num{font-family:var(--font-label);font-size:28px;color:var(--areia);line-height:1;min-width:36px}.step-content h4{font-family:var(--font-display);font-size:17px;color:var(--carvao);margin-bottom:4px}.step-content p{font-size:14px;color:var(--caramelo);margin:0;max-width:100%}.img-placeholder{width:100%;border-radius:10px;background:linear-gradient(135deg,var(--creme) 0%,var(--areia) 100%);display:flex;align-items:center;justify-content:center;font-family:var(--font-script);color:var(--trigo);font-size:16px}.img-placeholder.tall{aspect-ratio:4/3}.img-placeholder.wide{aspect-ratio:16/7}.metrics-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}.metric-card{background:var(--carvao);border-radius:10px;padding:28px 24px;text-align:center}.metric-card .metric-num{font-family:var(--font-display);font-size:42px;font-style:italic;color:var(--trigo);line-height:1;display:block;margin-bottom:8px}.metric-card .metric-desc{font-family:var(--font-body);font-size:13px;color:#9a8a7a;margin:0;max-width:100%}.learnings{background:white;border:1px solid var(--areia);border-radius:12px;padding:36px;margin-top:32px}.learnings h3{font-size:18px;color:var(--terra);margin-bottom:20px}.learning-item{display:flex;gap:16px;margin-bottom:18px;align-items:flex-start}.learning-item:last-child{margin-bottom:0}.learning-dot{width:8px;height:8px;border-radius:50%;background:var(--terracota);margin-top:7px;flex-shrink:0}.learning-item p{font-size:15px;color:#5a4a3a;margin:0;max-width:100%}.proj-nav{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:64px;padding-top:40px;border-top:1px solid var(--areia)}.proj-nav-item{background:white;border:1px solid var(--areia);border-radius:10px;padding:24px;text-decoration:none;transition:box-shadow .2s,transform .2s,border-color .2s}.proj-nav-item:hover{box-shadow:0 8px 32px rgba(196,92,46,.12);transform:translateY(-3px);border-color:var(--trigo)}.proj-nav-item .nav-dir{font-family:var(--font-label);font-size:11px;letter-spacing:2px;color:var(--salvia);margin-bottom:6px;display:block}.proj-nav-item h4{font-family:var(--font-display);font-size:18px;color:var(--carvao);margin-bottom:4px}.proj-nav-item p{font-size:13px;color:var(--caramelo);margin:0}.proj-nav-item.next{text-align:right}@media(max-width:700px){.two-col,.two-col-3-2,.insight-grid,.metrics-row{grid-template-columns:1fr}.proj-nav{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h2>Barbara Costa</h2>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../portfolio.html" class="active">Portfólio</a>
+      <a href="../contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <div class="proj-hero fade-in">
+    <div class="breadcrumb"><a href="../portfolio.html">Portfólio</a><span>›</span><span>Redesign FIRA Brasil</span></div>
+    <h1>Redesign FIRA Brasil</h1>
+    <p class="proj-tagline">Modernização de site educacional com foco em navegação intuitiva e clareza de informação para o público acadêmico.</p>
+    <div class="meta-row">
+      <div class="meta-badge"><span class="meta-label">Tipo</span><span class="meta-value">Web Design · Redesign</span></div>
+      <div class="meta-badge"><span class="meta-label">Ferramentas</span><span class="meta-value">Figma · Adobe XD</span></div>
+      <div class="meta-badge"><span class="meta-label">Ano</span><span class="meta-value">2024</span></div>
+      <div class="meta-badge"><span class="meta-label">Papel</span><span class="meta-value">Web Design · UX</span></div>
+    </div>
+  </div>
+
+  <div class="proj-cover-placeholder fade-in">substitua por imagem do projeto</div>
+
+  <div class="case-section fade-in">
+    <span class="section-number">01 — CONTEXTO</span>
+    <h2>Contexto</h2>
+    <div class="two-col-3-2">
+      <div>
+        <p>Descreva o que é a FIRA Brasil, para qual público o site existe e qual o papel da plataforma no ecossistema educacional e de robótica.</p>
+        <p>Fale sobre o site original — o que existia antes, quais eram os problemas percebidos, quem acessava e com qual objetivo.</p>
+      </div>
+      <div class="img-placeholder tall">imagem de contexto</div>
+    </div>
+  </div>
+
+  <div class="case-section fade-in">
+    <span class="section-number">02 — PROBLEMA</span>
+    <h2>Qual era o problema?</h2>
+    <p>Descreva o problema central: o que estava falhando na experiência do usuário com o site original da FIRA Brasil?</p>
+    <div class="insight-grid">
+      <div class="insight-card"><span class="insight-icon">◎</span><h4>Navegação confusa</h4><p>Descreva como a arquitetura de informação prejudicava o usuário na busca por conteúdo.</p></div>
+      <div class="insight-card"><span class="insight-icon">✦</span><h4>Visual desatualizado</h4><p>Descreva como a identidade visual não refletia o posicionamento de uma instituição de referência.</p></div>
+      <div class="insight-card"><span class="insight-icon">◈</span><h4>Hierarquia ausente</h4><p>Descreva como a falta de clareza visual dificultava encontrar as informações mais importantes.</p></div>
+    </div>
+  </div>
+
+  <div class="case-section fade-in">
+    <span class="section-number">03 — PROCESSO</span>
+    <h2>Como eu pensei a solução</h2>
+    <p>Explique seu processo — auditoria do site existente, benchmarks com portais educacionais, reestruturação da arquitetura de informação e construção do novo sistema visual.</p>
+    <div class="two-col">
+      <div class="process-steps">
+        <div class="process-step"><span class="step-num">01</span><div class="step-content"><h4>Auditoria do site atual</h4><p>Mapeamento de todos os fluxos e identificação dos pontos de maior atrito.</p></div></div>
+        <div class="process-step"><span class="step-num">02</span><div class="step-content"><h4>Arquitetura da informação</h4><p>Reestruturação do menu e da hierarquia de conteúdo para clareza máxima.</p></div></div>
+        <div class="process-step"><span class="step-num">03</span><div class="step-content"><h4>Wireframes e protótipo</h4><p>Validação dos novos fluxos antes de investir no design visual final.</p></div></div>
+        <div class="process-step"><span class="step-num">04</span><div class="step-content"><h4>UI e sistema visual</h4><p>Identidade visual alinhada ao posicionamento de uma instituição educacional de referência.</p></div></div>
+      </div>
+      <div class="img-placeholder tall">wireframes / processo</div>
+    </div>
+  </div>
+
+  <div class="case-section fade-in">
+    <span class="section-number">04 — SOLUÇÃO</span>
+    <h2>A solução</h2>
+    <p>Apresente as principais páginas do redesign. Para cada tela, explique o que mudou e a decisão que sustenta cada escolha.</p>
+    <div class="img-placeholder wide" style="margin:32px 0;">telas principais da solução</div>
+    <div class="two-col">
+      <div><span class="label-tag">Decisão de design 1</span><h3 style="margin-top:8px;">Nova navegação</h3><p>Explique como a nova arquitetura de menu resolve o problema de desorientação do usuário no site.</p></div>
+      <div><span class="label-tag">Decisão de design 2</span><h3 style="margin-top:8px;">Sistema de hierarquia</h3><p>Explique como o sistema de tipografia e espaçamento guia o olhar e facilita a leitura.</p></div>
+    </div>
+    <div class="img-placeholder wide" style="margin-top:28px;">telas secundárias / detalhes</div>
+  </div>
+
+  <div class="case-section fade-in">
+    <span class="section-number">05 — RESULTADO</span>
+    <h2>Resultado</h2>
+    <p>Descreva o impacto do redesign em navegabilidade, clareza de informação e percepção de credibilidade da instituição.</p>
+    <div class="metrics-row">
+      <div class="metric-card"><span class="metric-num">00%</span><p class="metric-desc">melhora na clareza de navegação</p></div>
+      <div class="metric-card"><span class="metric-num">00s</span><p class="metric-desc">redução no tempo para encontrar informação</p></div>
+      <div class="metric-card"><span class="metric-num">00+</span><p class="metric-desc">páginas reestruturadas</p></div>
+    </div>
+    <div class="learnings">
+      <h3>O que aprendi nesse projeto</h3>
+      <div class="learning-item"><div class="learning-dot"></div><p>Redesign não é só estética — reestruturar a arquitetura de informação foi o maior ganho do projeto.</p></div>
+      <div class="learning-item"><div class="learning-dot"></div><p>Sites educacionais têm públicos muito diferentes acessando o mesmo conteúdo — isso exige hierarquias muito claras.</p></div>
+      <div class="learning-item"><div class="learning-dot"></div><p>Descreva o que você faria diferente — mostra maturidade de processo e capacidade de autocrítica.</p></div>
+    </div>
+  </div>
+
+  <div class="cta-banner">
+    <h2>Gostou desse projeto?</h2>
+    <p>Posso criar algo estratégico para o seu negócio.</p>
+    <a href="../contato.html" class="btn">🚀 Falar comigo</a>
+  </div>
+
+  <div class="proj-nav">
+    <a href="fitforall.html" class="proj-nav-item"><span class="nav-dir">← ANTERIOR</span><h4>Fit For All</h4><p>UX/UI · App Mobile</p></a>
+    <a href="spa.html" class="proj-nav-item next"><span class="nav-dir">PRÓXIMO →</span><h4>Clínica de Spa</h4><p>Web Design · Institucional</p></a>
+  </div>
+
+</div>
+</body>
+</html>

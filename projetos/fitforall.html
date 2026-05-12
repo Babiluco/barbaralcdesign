@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fit For All — Barbara Costa</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+.proj-hero{padding:56px 0 48px;border-bottom:1px solid var(--areia)}.breadcrumb{font-family:var(--font-label);font-size:11px;letter-spacing:2px;color:var(--trigo);display:flex;align-items:center;gap:8px;margin-bottom:28px}.breadcrumb a{color:var(--trigo);text-decoration:none;transition:color .2s}.breadcrumb a:hover{color:var(--terracota)}.proj-hero h1{text-align:left;font-size:clamp(36px,6vw,58px);max-width:680px;margin-bottom:16px;line-height:1.1}.proj-tagline{font-size:18px;color:var(--caramelo);max-width:540px;margin-bottom:36px}.meta-row{display:flex;gap:12px;flex-wrap:wrap}.meta-badge{background:white;border:1px solid var(--areia);border-radius:8px;padding:10px 18px;display:flex;flex-direction:column;gap:2px}.meta-badge .meta-label{font-family:var(--font-label);font-size:10px;letter-spacing:2px;color:var(--salvia)}.meta-badge .meta-value{font-family:var(--font-body);font-size:14px;color:var(--carvao);font-weight:500}
+
+/* ─── CAPA: hero do projeto — full width, nenhuma restrição ─── */
+.proj-cover{
+  width:100%;
+  border-radius:12px;
+  overflow:hidden;
+  margin:48px 0;
+}
+.proj-cover img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:12px;
+}
+
+.case-section{padding:56px 0;border-bottom:1px solid var(--areia)}.section-number{font-family:var(--font-label);font-size:11px;letter-spacing:3px;color:var(--terracota);margin-bottom:6px;display:block}.case-section h2{font-size:32px;margin-bottom:20px}.case-section p{max-width:640px;font-size:16px;line-height:1.85;color:#5a4a3a;margin-bottom:16px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:32px}.two-col>*{min-width:0}.two-col-3-2{display:grid;grid-template-columns:3fr 2fr;gap:40px;align-items:start}.two-col-3-2>*{min-width:0}.insight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}.insight-card{background:white;border:1px solid var(--areia);border-radius:10px;padding:24px;border-top:3px solid var(--terracota)}.insight-card .insight-icon{font-size:24px;margin-bottom:12px;display:block}.insight-card h4{font-family:var(--font-display);font-size:16px;color:var(--carvao);margin-bottom:8px}.insight-card p{font-size:14px;color:var(--caramelo);margin:0;max-width:100%}.process-steps{display:flex;flex-direction:column;gap:16px;margin-top:32px}.process-step{display:flex;gap:24px;align-items:flex-start}.step-num{font-family:var(--font-label);font-size:28px;color:var(--areia);line-height:1;min-width:36px}.step-content h4{font-family:var(--font-display);font-size:17px;color:var(--carvao);margin-bottom:4px}.step-content p{font-size:14px;color:var(--caramelo);margin:0;max-width:100%}.metrics-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}.metric-card{background:var(--carvao);border-radius:10px;padding:28px 24px;text-align:center}.metric-card .metric-num{font-family:var(--font-display);font-size:42px;font-style:italic;color:var(--trigo);line-height:1;display:block;margin-bottom:8px}.metric-card .metric-desc{font-family:var(--font-body);font-size:13px;color:#9a8a7a;margin:0;max-width:100%}.learnings{background:white;border:1px solid var(--areia);border-radius:12px;padding:36px;margin-top:32px}.learnings h3{font-size:18px;color:var(--terra);margin-bottom:20px}.learning-item{display:flex;gap:16px;margin-bottom:18px;align-items:flex-start}.learning-item:last-child{margin-bottom:0}.learning-dot{width:8px;height:8px;border-radius:50%;background:var(--terracota);margin-top:7px;flex-shrink:0}.learning-item p{font-size:15px;color:#5a4a3a;margin:0;max-width:100%}.proj-nav{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:64px;padding-top:40px;border-top:1px solid var(--areia)}.proj-nav-item{background:white;border:1px solid var(--areia);border-radius:10px;padding:24px;text-decoration:none;transition:box-shadow .2s,transform .2s,border-color .2s}.proj-nav-item:hover{box-shadow:0 8px 32px rgba(196,92,46,.12);transform:translateY(-3px);border-color:var(--trigo)}.proj-nav-item .nav-dir{font-family:var(--font-label);font-size:11px;letter-spacing:2px;color:var(--salvia);margin-bottom:6px;display:block}.proj-nav-item h4{font-family:var(--font-display);font-size:18px;color:var(--carvao);margin-bottom:4px}.proj-nav-item p{font-size:13px;color:var(--caramelo);margin:0}.proj-nav-item.next{text-align:right}.tag-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.tag{background:var(--creme);border:1px solid var(--areia);border-radius:20px;padding:6px 14px;font-family:var(--font-label);font-size:11px;letter-spacing:1px;color:var(--caramelo)}.label-tag{font-family:var(--font-label);font-size:10px;letter-spacing:2px;color:var(--salvia)}
+
+/* ─── IMAGENS: sistema de tamanhos por nível de hierarquia ─── */
+
+/* Nível 1 — Full bleed: artefatos que precisam de toda a largura para serem lidos */
+.img-full {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Nível 2 — Destaque contido: "wow moment" da UI final, ainda dominante mas com respiro */
+.img-feature {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+/* Nível 3 — Colateral: imagem dentro de grid (par com texto ou com outra imagem) */
+.img-inline {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  /* altura máxima garante que imagens muito altas não quebrem o ritmo do grid */
+  max-height: 380px;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* Logo/app em contexto — menor, não compete com o texto */
+.img-logo {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  max-height: 320px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.proj-img-caption{
+  font-family:var(--font-label);
+  font-size:10px;
+  letter-spacing:2px;
+  color:var(--salvia);
+  margin-top:8px;
+  display:block;
+}
+
+/* ─── Wrapper para imagem de destaque: adiciona fundo sutil para contrastar ─── */
+.img-feature-wrap {
+  background: var(--creme, #f8f4ef);
+  border-radius: 12px;
+  padding: 32px;
+  margin: 32px 0;
+}
+
+/* ─── Wrapper para pares de imagens de mesmo peso (brand + cores) ─── */
+.img-pair-wrap {
+  overflow: hidden;
+  border-radius: 10px;
+  /* altura fixa nos pares cria um ritmo visual consistente */
+  height: 260px;
+  display: flex;
+  align-items: stretch;
+}
+.img-pair-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border-radius: 10px;
+}
+
+@media(max-width:700px){
+  .two-col,.two-col-3-2,.insight-grid,.metrics-row{grid-template-columns:1fr}
+  .proj-nav{grid-template-columns:1fr}
+  .proj-hero h1{font-size:32px}
+  .img-feature-wrap{padding:16px}
+  .img-pair-wrap{height:200px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h2>Barbara Costa</h2>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../portfolio.html" class="active">Portfólio</a>
+      <a href="../contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="proj-hero fade-in">
+    <div class="breadcrumb"><a href="../portfolio.html">Portfólio</a><span>›</span><span>Fit For All</span></div>
+    <h1>Fit For All</h1>
+    <p class="proj-tagline">App de fitness pensado para corpos reais — UX/UI com foco em acessibilidade e inclusão no universo fitness.</p>
+    <div class="meta-row">
+      <div class="meta-badge"><span class="meta-label">Tipo</span><span class="meta-value">UX/UI · App Mobile</span></div>
+      <div class="meta-badge"><span class="meta-label">Ferramentas</span><span class="meta-value">Figma</span></div>
+      <div class="meta-badge"><span class="meta-label">Ano</span><span class="meta-value">2024</span></div>
+      <div class="meta-badge"><span class="meta-label">Papel</span><span class="meta-value">UX Research · UI Design</span></div>
+    </div>
+  </div>
+
+  <!-- CAPA — Nível 1: hero máximo, sem restrição -->
+  <!-- Razão: primeira impressão do projeto, precisa impressionar em toda a largura -->
+  <div class="proj-cover fade-in">
+    <img src="../img_port/capafit.png" alt="Fit For All — visão geral do projeto">
+  </div>
+
+  <!-- 01 — CONTEXTO -->
+  <div class="case-section fade-in">
+    <span class="section-number">01 — CONTEXTO</span>
+    <h2>Contexto</h2>
+    <div class="two-col-3-2">
+      <div>
+        <p><strong>FitForAll</strong> é um app que combina modernidade e simplicidade, com acessibilidade, pensado em fazer uso de um design universal. Ele conta com diversas funcionalidades de um app de auxílio em execução acadêmica comum e um foco em ajudar a todos que precisem de qualquer ajuda diferenciada.</p>
+        <p>O projeto nasceu da observação de uma lacuna no mercado de apps de fitness: a maioria das soluções disponíveis ignora usuários com necessidades especiais ou que simplesmente fogem do perfil "padrão" das academias tradicionais.</p>
+        <div class="tag-row">
+          <span class="tag">APP MOBILE</span>
+          <span class="tag">ACESSIBILIDADE</span>
+          <span class="tag">FITNESS</span>
+          <span class="tag">DESIGN INCLUSIVO</span>
+        </div>
+      </div>
+      <!-- Logo/app — Nível 3 colateral com altura contida -->
+      <!-- Razão: suporte visual ao texto, não deve dominar a seção -->
+      <div style="overflow:hidden;border-radius:10px;display:flex;align-items:center;justify-content:center;">
+        <img src="../img_port/fitforallapp.png" alt="FitForAll · Logo" class="img-logo">
+      </div>
+    </div>
+  </div>
+
+  <!-- 02 — PROBLEMA -->
+  <div class="case-section fade-in">
+    <span class="section-number">02 — PROBLEMA</span>
+    <h2>Qual era o problema?</h2>
+    <p>Muitos aplicativos de treino apresentam interfaces complexas e pouca personalização. O objetivo do projeto foi criar uma experiência simples e acessível para acompanhamento de atividades físicas, progresso e metas pessoais.</p>
+    <div class="insight-grid">
+      <div class="insight-card">
+        <span class="insight-icon">◎</span>
+        <h4>Interfaces complexas</h4>
+        <p>Apps de fitness existentes sobrecarregam o usuário com informações e fluxos difíceis de navegar, especialmente para iniciantes.</p>
+      </div>
+      <div class="insight-card">
+        <span class="insight-icon">✦</span>
+        <h4>Pouca personalização</h4>
+        <p>A maioria dos apps ignora variações de perfil, capacidade física e necessidades especiais — tratando todos os usuários como iguais.</p>
+      </div>
+      <div class="insight-card">
+        <span class="insight-icon">◈</span>
+        <h4>Baixa acessibilidade</h4>
+        <p>Poucos apps consideram pessoas com deficiência como público relevante, criando barreiras de uso logo na primeira interação.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 03 — PROCESSO -->
+  <div class="case-section fade-in">
+    <span class="section-number">03 — PROCESSO</span>
+    <h2>Como eu pensei a solução</h2>
+    <p>O fluxo de usuário no FitForAll foi planejado para garantir uma navegação fluida e intuitiva desde a abertura do app até o acompanhamento de metas e dados de saúde.</p>
+
+    <!-- Wireframes: par com texto de processo — Nível 3 colateral -->
+    <!-- Razão: a imagem apoia o texto ao lado, nenhuma deve dominar a outra -->
+    <div class="two-col" style="align-items:start;">
+      <div class="process-steps" style="margin-top:0;">
+        <div class="process-step">
+          <span class="step-num">01</span>
+          <div class="step-content">
+            <h4>Wireframes</h4>
+            <p>Estrutura de navegação e funcionalidades definidas antes do visual — simples e direto ao ponto.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">02</span>
+          <div class="step-content">
+            <h4>Fluxo de usuário</h4>
+            <p>Login → cadastro → personalização de perfil → tela principal com atalhos para sono, treinos, metas e perfil.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">03</span>
+          <div class="step-content">
+            <h4>Design System</h4>
+            <p>Cor, tipografia, grid, ícones e componentes reutilizáveis para consistência e escalabilidade.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <span class="step-num">04</span>
+          <div class="step-content">
+            <h4>UI e refinamento</h4>
+            <p>Alto contraste e tema claro/escuro, priorizando inclusão de pessoas com deficiência visual.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- Wireframe colateral: altura limitada pelo grid 1:1 com o texto -->
+        <img src="../img_port/wirefit.png" alt="Wireframes FitForAll" class="img-inline">
+        <span class="proj-img-caption">WIREFRAMES · ESTRUTURA DE NAVEGAÇÃO</span>
+      </div>
+    </div>
+
+    <!-- Fluxo de usuário — Nível 1: full width -->
+    <!-- Razão: artefato denso com muita informação, precisa de toda a largura para ser legível -->
+    <div style="margin-top:40px;">
+      <img src="../img_port/fluxousuariofit.png" alt="Fluxo de usuário FitForAll" class="img-full">
+      <span class="proj-img-caption">FLUXO DE USUÁRIO · MAPEAMENTO COMPLETO</span>
+    </div>
+
+    <!-- Brand Guidelines + Cor & Tipografia — Nível 3: par de igual peso -->
+    <!-- Razão: os dois artefatos têm a mesma importância hierárquica; altura fixa cria ritmo -->
+    <div class="two-col" style="margin-top:32px;align-items:start;">
+      <div>
+        <div class="img-pair-wrap">
+          <img src="../img_port/Brand Guidelines.png" alt="Brand Guidelines FitForAll">
+        </div>
+        <span class="proj-img-caption">BRAND GUIDELINES</span>
+      </div>
+      <div>
+        <div class="img-pair-wrap">
+          <img src="../img_port/corefontfit.png" alt="Cores e tipografia FitForAll">
+        </div>
+        <span class="proj-img-caption">COR & TIPOGRAFIA</span>
+      </div>
+    </div>
+
+    <!-- Sistema de grid — Nível 1: full width -->
+    <!-- Razão: documento técnico de grid precisa de toda a largura para mostrar detalhes -->
+    <div style="margin-top:32px;">
+      <img src="../img_port/Sistema_de_grid.png" alt="Sistema de Grid FitForAll" class="img-full">
+      <span class="proj-img-caption">SISTEMA DE GRID · ESTRUTURA ESPACIAL</span>
+    </div>
+  </div>
+
+  <!-- 04 — SOLUÇÃO -->
+  <div class="case-section fade-in">
+    <span class="section-number">04 — SOLUÇÃO</span>
+    <h2>A solução</h2>
+    <p style="max-width:100%;">O FitForAll é um app de treino com interface moderna, intuitiva e acessível. Permite personalização de metas, integração com smartwatches, uso por múltiplas partes e oferece recursos para pessoas com deficiência. Conta com uma agenda de treinos, histórico de atividades e suporte contínuo por meio da seção de perguntas frequentes.</p>
+
+    <!-- Telas do app — Nível 2: "wow moment", centralizado com max-width e fundo de respiro -->
+    <!-- Razão: é o ponto alto da seção de solução; max-width 900px impede que telas mobile -->
+    <!-- fiquem distorcidas em monitores grandes, e o padding cria uma moldura de produto -->
+    <div class="img-feature-wrap">
+      <img src="../img_port/appfit.png" alt="Telas do app FitForAll" class="img-feature">
+      <span class="proj-img-caption" style="text-align:center;display:block;margin-top:12px;">TELAS PRINCIPAIS · UI FINAL</span>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <span class="label-tag">DECISÃO DE DESIGN 1</span>
+        <h3 style="margin-top:8px;">Design System Acessível</h3>
+        <p style="max-width:100%;">O FitForAll conta com um design acessível e visualmente claro, com alto contraste de cores e opções de tema claro e escuro. Os elementos visuais, como ícones de 24px e a fonte Poppins, garantem legibilidade e uma estética moderna — adaptando-se bem a diferentes usuários e contextos.</p>
+      </div>
+      <div>
+        <span class="label-tag">DECISÃO DE DESIGN 2</span>
+        <h3 style="margin-top:8px;">Navegação Personalizada</h3>
+        <p style="max-width:100%;">Cada etapa foi pensada para facilitar o uso e tornar a experiência personalizada e acessível — desde a personalização do perfil até os atalhos da tela principal para monitoramento de sono, treinos e metas.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 05 — RESULTADO -->
+  <div class="case-section fade-in">
+    <span class="section-number">05 — RESULTADO</span>
+    <h2>Resultado</h2>
+    <p>O projeto resultou em uma interface moderna e inclusiva, que coloca a acessibilidade como diferencial central — e não como um recurso secundário. A solução demonstra que é possível unir estética, usabilidade e inclusão no universo fitness.</p>
+    <div class="metrics-row">
+      <div class="metric-card"><span class="metric-num">2</span><p class="metric-desc">temas de interface — claro e escuro</p></div>
+      <div class="metric-card"><span class="metric-num">4</span><p class="metric-desc">módulos principais: treino, sono, metas e perfil</p></div>
+      <div class="metric-card"><span class="metric-num">1</span><p class="metric-desc">design system completo criado do zero</p></div>
+    </div>
+    <div class="learnings">
+      <h3>O que aprendi nesse projeto</h3>
+      <div class="learning-item"><div class="learning-dot"></div><p>Projetar para acessibilidade desde o início — e não como um ajuste no final — muda completamente as decisões de tipografia, contraste e hierarquia visual.</p></div>
+      <div class="learning-item"><div class="learning-dot"></div><p>Um design system bem estruturado com tokens de cor e tipografia é o que garante que um app escalável mantenha coerência em todos os estados e telas.</p></div>
+      <div class="learning-item"><div class="learning-dot"></div><p>Mapeie o fluxo completo antes de começar a UI — cada tela faz mais sentido quando você entende de onde o usuário veio e para onde vai.</p></div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-banner">
+    <h2>Gostou desse projeto?</h2>
+    <p>Posso criar algo estratégico para o seu negócio.</p>
+    <a href="../contato.html" class="btn">🚀 Falar comigo</a>
+  </div>
+
+  <!-- NAV -->
+  <div class="proj-nav">
+    <a href="xpzone.html" class="proj-nav-item"><span class="nav-dir">← ANTERIOR</span><h4>XP Zone</h4><p>UX/UI · Landing Page</p></a>
+    <a href="spa.html" class="proj-nav-item next"><span class="nav-dir">PRÓXIMO →</span><h4>Clínica de Spa</h4><p>Web Design · Institucional</p></a>
+  </div>
+
+</div>
+</body>
+</html>
