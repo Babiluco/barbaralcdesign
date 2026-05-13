@@ -43,6 +43,9 @@
       <label class="label-tag" for="nome">Seu nome</label>
       <input type="text" id="nome" placeholder="Como você se chama?" required>
 
+      <label class="label-tag" for="email" style="margin-top:8px;">Seu e-mail</label>
+      <input type="email" id="email" placeholder="voce@email.com" required>
+
       <label class="label-tag" for="negocio" style="margin-top:8px;">Seu negócio</label>
       <input type="text" id="negocio" placeholder="Nome ou segmento do seu negócio" required>
 
@@ -132,7 +135,7 @@ document.getElementById("formContato").addEventListener("submit", function(e) {
   e.preventDefault();
 
   const nome     = document.getElementById("nome").value;
-  const email     = document.getElementById("e-mail").value;
+  const email     = document.getElementById("email").value;
   const negocio  = document.getElementById("negocio").value;
   const tipo     = document.getElementById("tipo").value;
   const mensagem = document.getElementById("mensagem").value;
@@ -146,6 +149,7 @@ document.getElementById("formContato").addEventListener("submit", function(e) {
     },
     body: JSON.stringify({
       nome,
+      email,
       negocio,
       tipo,
       mensagem
@@ -156,7 +160,11 @@ document.getElementById("formContato").addEventListener("submit", function(e) {
     document.getElementById("loading").style.display = "none";
     document.getElementById("success").style.display = "block";
 
-    const texto = `Olá! Me chamo ${nome}.\nTenho um negócio: ${negocio}.\nPreciso de: ${tipo}.\nDetalhes: ${mensagem}`;
+    const texto = `Olá! Me chamo ${nome}.
+    Email: ${email}
+    Tenho um negócio: ${negocio}.
+    Preciso de: ${tipo}.
+    Detalhes: ${mensagem}`;
     const numero = "5521999956844";
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 
