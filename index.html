@@ -7,6 +7,62 @@
 <title>Barbara Costa — UX & Web Designer</title>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/png" href="favicon.png">
+
+<style>
+/* ── CORREÇÕES RESPONSIVAS — index.html ── */
+
+/* Header fora do fluxo do container para cobrir a tela toda */
+header {
+  margin-left: -24px;
+  margin-right: -24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Grid de diferenciais — responsivo via classe */
+.diferenciais-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 80px;
+}
+
+/* Botões do hero — wrapper com classe */
+.hero-btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+  /* Header */
+  header {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  /* Grid de diferenciais: 1 coluna no mobile */
+  .diferenciais-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 48px;
+  }
+
+  /* Botões do hero empilhados */
+  .hero-btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero-btns .btn {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -22,23 +78,22 @@
       <a href="sobre.html">Sobre</a>
       <a href="contato.html">Contato</a>
     </nav>
-
-  <button id="theme-toggle">◐</button>
-
+    <button id="theme-toggle">◐</button>
   </header>
 
   <div class="hero fade-in">
     <span class="label">UX · UI · WEB DESIGN</span>
     <h1>Design que vende.<br><em>Experiência que converte.</em></h1>
     <p>Criando presença digital estratégica para negócios que querem crescer de verdade.</p>
-    <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+    <!-- Antes era style inline sem media query — agora usa classe -->
+    <div class="hero-btns">
       <a href="portfolio.html" class="btn">Ver projetos</a>
       <a href="contato.html" class="btn secondary">Falar comigo</a>
     </div>
   </div>
 
-  <!-- DIFERENCIAIS -->
-  <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:80px;">
+  <!-- DIFERENCIAIS — antes era style inline sem media query -->
+  <div class="diferenciais-grid">
     <div class="card-service fade-in" style="animation-delay:0.1s">
       <span class="icon">✦</span>
       <span class="label-tag">Estratégia</span>
@@ -130,10 +185,8 @@ const reveals = document.querySelectorAll('.reveal');
 
 function revealOnScroll() {
   const windowHeight = window.innerHeight;
-
   reveals.forEach(el => {
     const elementTop = el.getBoundingClientRect().top;
-
     if (elementTop < windowHeight - 100) {
       el.classList.add('active');
     }
@@ -148,7 +201,6 @@ revealOnScroll();
 const toggle = document.getElementById("theme-toggle");
 
 toggle.addEventListener("click", () => {
-
   if(document.documentElement.getAttribute("data-theme") === "dark"){
     document.documentElement.removeAttribute("data-theme");
     localStorage.setItem("theme", "light");
@@ -156,12 +208,15 @@ toggle.addEventListener("click", () => {
     document.documentElement.setAttribute("data-theme", "dark");
     localStorage.setItem("theme", "dark");
   }
-
 });
 
 if(localStorage.getItem("theme") === "dark"){
   document.documentElement.setAttribute("data-theme", "dark");
 }
+</script>
+
+</body>
+</html>
 </script>
 
 </body>
