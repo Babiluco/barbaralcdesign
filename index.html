@@ -11,12 +11,26 @@
 <style>
 /* ── CORREÇÕES RESPONSIVAS — index.html ── */
 
-/* Header fora do fluxo do container para cobrir a tela toda */
+/* Header: sempre na linha, cobre largura total */
 header {
+  flex-direction: row !important;   /* anula o column do style.css em 700px */
+  align-items: center !important;
+  flex-wrap: nowrap;
   margin-left: -24px;
   margin-right: -24px;
   padding-left: 24px;
   padding-right: 24px;
+  gap: 0;
+}
+
+/* Nav sempre em linha, quebra só abaixo de 480px */
+nav {
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+nav a {
+  white-space: nowrap;
 }
 
 /* Grid de diferenciais — responsivo via classe */
@@ -35,11 +49,19 @@ header {
   flex-wrap: wrap;
 }
 
-@media (max-width: 700px) {
-  /* Header */
+/* Mobile real: abaixo de 520px */
+@media (max-width: 520px) {
   header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
     padding-top: 14px;
     padding-bottom: 14px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   /* Grid de diferenciais: 1 coluna no mobile */
@@ -60,6 +82,13 @@ header {
     width: 100%;
     max-width: 320px;
     text-align: center;
+  }
+}
+
+/* Tablet (521px–700px): header na linha, grid 2 colunas */
+@media (min-width: 521px) and (max-width: 700px) {
+  .diferenciais-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 </style>
@@ -213,10 +242,6 @@ toggle.addEventListener("click", () => {
 if(localStorage.getItem("theme") === "dark"){
   document.documentElement.setAttribute("data-theme", "dark");
 }
-</script>
-
-</body>
-</html>
 </script>
 
 </body>
