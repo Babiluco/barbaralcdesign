@@ -130,43 +130,6 @@
  
 </footer>
 
-<script>
-const reveals = document.querySelectorAll('.reveal');
-
-function revealOnScroll() {
-  const windowHeight = window.innerHeight;
-
-  reveals.forEach(el => {
-    const elementTop = el.getBoundingClientRect().top;
-
-    if (elementTop < windowHeight - 100) {
-      el.classList.add('active');
-    }
-  });
-}
-
-window.addEventListener('scroll', revealOnScroll);
-revealOnScroll();
-</script>
-
-<script>
-const toggle = document.getElementById("theme-toggle");
-
-toggle.addEventListener("click", () => {
-
-  if(document.documentElement.getAttribute("data-theme") === "dark"){
-    document.documentElement.removeAttribute("data-theme");
-    localStorage.setItem("theme", "light");
-  } else {
-    document.documentElement.setAttribute("data-theme", "dark");
-    localStorage.setItem("theme", "dark");
-  }
-
-});
-
-if(localStorage.getItem("theme") === "dark"){
-  document.documentElement.setAttribute("data-theme", "dark");
-}
-</script>
+<script src="main.js"></script>
 </body>
 </html>
