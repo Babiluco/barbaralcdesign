@@ -22,11 +22,12 @@
   --carvao:    #1E1E1E;
 
   /* Semânticas */
-  --fundo:    var(--creme);
-  --texto:    var(--carvao);
-  --destaque: var(--terracota);
-  --acento:   var(--salvia);
-  --suave:    var(--areia);
+  --fundo:        var(--creme);
+  --texto:        var(--carvao);
+  --texto-suave:  #5A4A3A;
+  --destaque:     var(--terracota);
+  --acento:       var(--salvia);
+  --suave:        var(--areia);
 
   /* Tipografia */
   --font-display: 'Playfair Display', Georgia, serif;
@@ -50,15 +51,17 @@
    2. DARK MODE — VARIÁVEIS
    ========================================= */
 [data-theme="dark"] {
-  --creme:     #111111;
-  --areia:     #1D1D1D;
-  --carvao:    #FFFFFF;
-  --caramelo:  #E2D5C8;
-  --trigo:     #DABC9E;
-  --terracota: #D17842;
-  --salvia:    #8EA08D;
-  --terra:     #F7DDC1;
-  --fundo:     #111111;
+  --creme:       #111111;
+  --areia:       #1D1D1D;
+  --carvao:      #FFFFFF;
+  --caramelo:    #E2D5C8;
+  --trigo:       #DABC9E;
+  --terracota:   #D17842;
+  --salvia:      #8EA08D;
+  --terra:       #F7DDC1;
+  --fundo:       #111111;
+  --texto-suave: rgba(245, 239, 230, 0.78);
+  --card-bg:     rgba(255, 255, 255, 0.04);
 }
 
 [data-theme="dark"] body {
@@ -187,7 +190,7 @@ h3 {
 }
 
 p {
-  color: #5A4A3A;
+  color: var(--texto-suave, #5A4A3A);
   line-height: 1.75;
 }
 
@@ -453,10 +456,10 @@ button[type="submit"]:hover {
 
 /* Temas das capas */
 .card-fit     { background-image: url('img_port/capafit.png'); }
-.card-fira    { background-image: url('https://via.placeholder.com/800x480/E8DDD0/8B5E3C?text=FIRA+Brasil'); }
+.card-fira    { background-image: url('img_port/capafira.png'); background-color: #E8DDD0; }
 .card-spa     { background-image: url('img_port/capa_velour.png'); }
 .card-outubro { background-image: url('img_port/capaout.png'); }
-.card-xp      { background-image: url('https://via.placeholder.com/800x480/4A7050/F5EFE6?text=XP+Zone'); }
+.card-xp      { background-image: url('img_port/capaxp.png'); background-color: #4A7050; }
 
 /* Portfolio grid */
 .portfolio-grid {
