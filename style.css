@@ -455,11 +455,12 @@ button[type="submit"]:hover {
 }
 
 /* Temas das capas */
+.card-viva    { background-color: #356858; }
 .card-fit     { background-image: url('img_port/capafit.png'); }
-.card-fira    { background-image: url('img_port/capafira.png'); background-color: #E8DDD0; }
+.card-fira    { background-color: #E8DDD0; }
 .card-spa     { background-image: url('img_port/capa_velour.png'); }
 .card-outubro { background-image: url('img_port/capaout.png'); }
-.card-xp      { background-image: url('img_port/capaxp.png'); background-color: #4A7050; }
+.card-xp      { background-image: url('img_port/xpzone_logo.png'); background-color: #4A7050; }
 
 /* Portfolio grid */
 .portfolio-grid {
@@ -939,3 +940,22 @@ a {
   line-height:1;
   opacity:.9;
 }
+
+/* Portfolio presentation */
+.brand-home { color: inherit; text-decoration: none; }
+.brand-home:focus-visible, .card:focus-visible, .contact-brief summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+.featured-projects { margin: 40px 0 56px; text-align: center; }
+.featured-projects .portfolio-grid { margin: 24px 0; text-align: left; }
+.project-extras { max-width: 680px; margin: 56px auto 0; }
+.project-extras p, .project-intro { margin: 12px 0 20px; }
+.about-portrait { display: block; width: 100%; height: 100%; object-fit: cover; }
+.about-details { display: flex; flex-wrap: wrap; gap: 20px 40px; margin: 24px 0 32px; }
+.contact-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 24px auto; }
+.contact-brief summary { cursor: pointer; font-weight: 600; }
+.contact-brief[open] form { margin-top: 20px; }
+.project-story { max-width: 720px; margin: 0 auto; padding-bottom: 56px; }
+.project-story section { margin: 36px 0; }
+.project-story p { margin: 12px 0 20px; }
