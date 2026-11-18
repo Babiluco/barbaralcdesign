@@ -14,16 +14,15 @@
 <div class="container">
 
   <header>
-    <h2>Barbara Costa</h2>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="servicos.html">Serviços</a>
-      <a href="portfolio.html" class="active">Portfólio</a>
+    <h2><a class="brand-home" href="index.html">Barbara Costa</a></h2>
+    <nav aria-label="Navegação principal">
+      <a href="portfolio.html" class="active" aria-current="page">Projetos</a>
       <a href="sobre.html">Sobre</a>
+      <a href="servicos.html">Serviços</a>
       <a href="contato.html">Contato</a>
     </nav>
     
-    <button id="theme-toggle">◐</button>
+    <button id="theme-toggle" type="button" aria-label="Alternar tema">◐</button>
 
   </header>
 
@@ -32,7 +31,7 @@
     <h1>Portfólio</h1>
     <div class="divider"></div>
     <p style="max-width:480px; margin:0 auto; color:var(--caramelo);">
-      UX, design e estratégia aplicados em projetos reais e conceituais.
+      Projetos de interfaces, aplicativos, sites e comunicação visual.
     </p>
   </div>
 
@@ -40,11 +39,17 @@
 
     <a href="projetos/fitforall.html" class="card card-fit" style="animation-delay:0.1s">
       <span class="label-tag">UX/UI · App</span>
-      <h3>Fit For All</h3>
-      <p>Acessibilidade e inclusão no universo fitness. UX centrado na diversidade de corpos e necessidades.</p>
+      <h3>FitTrack</h3>
+      <p>Evolução do FitForAll, projeto de UX/UI voltado à acessibilidade e à inclusão no universo fitness.</p>
     </a>
 
-   <a href="projetos/fira.html" class="card card-fira" style="animation-delay:0.2s">
+    <a href="projetos/viva.html" class="card card-viva" style="animation-delay:0.15s">
+      <span class="label-tag">UX/UI · App web</span>
+      <h3>Viva</h3>
+      <p>App de bem-estar para acompanhar hábitos como hidratação, alimentação, sono e atividade física.</p>
+    </a>
+
+    <a href="projetos/fira.html" class="card card-fira" style="animation-delay:0.2s">
       <span class="label-tag">Web Design · Redesign</span>
       <h3>Redesign FIRA Brasil</h3>
       <p>Modernização de site educacional com foco em navegação intuitiva e clareza de informação.</p>
@@ -72,46 +77,22 @@
 
   </div>
 
-  <!-- ===== SITES PRONTOS PARA PRESENTEAR / VENDA ===== -->
-  <div class="page-title fade-in" style="margin-top:64px;">
-    <span class="label-tag">Sites prontos</span>
-    <h1>Presenteie com um site</h1>
-    <div class="divider"></div>
-    <p style="max-width:520px; margin:0 auto; color:var(--caramelo);">
-      Sites personalizados para você dar de presente, ou criar algo divertido para seus amigos e equipe.
-    </p>
-  </div>
+  <section class="project-extras" aria-labelledby="projeto-extra">
+    <h2 id="projeto-extra">Aniversariantes do ano</h2>
+    <p>Site interativo para acompanhar as próximas datas e celebrar os aniversários de amigos, familiares ou colegas de equipe.</p>
+    <a class="btn secondary" href="https://babiluco.github.io/pet21-aniversarios/">Abrir site de aniversários</a>
+  </section>
 
-  <div class="sites-list" style="max-width:680px; margin:0 auto;">
-
-    <!-- EDITE: troque título, descrição, preço e o link do GitHub (Pages ou repositório) de cada site -->
-    <div class="site-item fade-in" style="padding:28px 0; border-bottom:1px solid var(--sage, #c9d3c5);">
-      <span class="label-tag">Site pronto · A partir de R$ XX</span>
-      <h3 style="margin:10px 0 6px;">Aniversariantes do ano</h3>
-      <p style="margin:0 0 12px; color:var(--caramelo);"Site de aniversário interativo, nele temos os aniversariantes, cornometro e todo mundo organizado em um circulo e a funcionalidade de soltar confetes no dia do aniversário, perfeito para amigos, equipe de trabalho e familiares</p>
-      <a href="https://babiluco.github.io/pet21-aniversarios/" target="_blank" rel="noopener" style="font-weight:600; color:var(--trigo);">Ver no GitHub →</a>
-    </div>
-
-    <div class="site-item fade-in" style="padding:28px 0; border-bottom:1px solid var(--sage, #c9d3c5);">
-      <span class="label-tag">Site pronto · A partir de R$ XX</span>
-      <h3 style="margin:10px 0 6px;">Nome do Site 2</h3>
-      <p style="margin:0 0 12px; color:var(--caramelo);">Breve descrição do que esse site faz e para quem ele é ideal.</p>
-      <a href="https://github.com/SEU-USUARIO/nome-do-repo-2" target="_blank" rel="noopener" style="font-weight:600; color:var(--trigo);">Ver no GitHub →</a>
-    </div>
-
-    <div class="site-item fade-in" style="padding:28px 0;">
-      <span class="label-tag">Site pronto · A partir de R$ XX</span>
-      <h3 style="margin:10px 0 6px;">Nome do Site 3</h3>
-      <p style="margin:0 0 12px; color:var(--caramelo);">Breve descrição do que esse site faz e para quem ele é ideal.</p>
-      <a href="https://github.com/SEU-USUARIO/nome-do-repo-3" target="_blank" rel="noopener" style="font-weight:600; color:var(--trigo);">Ver no GitHub →</a>
-    </div>
-
-  </div>
+  <section class="project-extras" aria-labelledby="presente-a-seu-amado">
+    <h2 id="presente-a-seu-amado">Presente a seu amado</h2>
+    <p>Nosso Amor é um presente digital para celebrar a história de vocês.</p>
+    <a class="btn secondary" href="https://babiluco.github.io/nosso-amor/">Abrir Nosso Amor</a>
+  </section>
 
   <div class="cta-banner" style="margin-top:48px;">
     <h2>Vamos criar o <em style="font-style:italic; color:var(--trigo);">seu projeto?</em></h2>
-    <p>Transformo ideias em experiências digitais que geram resultado.</p>
-    <a href="contato.html" class="btn">🚀 Solicitar meu projeto</a>
+    <p>Conte comigo para projetos de comunicação visual, UX/UI e web design.</p>
+    <a href="contato.html" class="btn">Falar sobre um projeto</a>
   </div>
 
 </div>
@@ -124,7 +105,7 @@
     <!-- MARCA -->
     <div class="footer-brand">
       <h2 class="footer-logo">Barbara Costa</h2>
-      <p>UX Designer & Web Designer criando experiências digitais que geram resultado real para negócios.</p>
+      <p>Design Gráfico e UX/UI para comunicação institucional e produtos digitais.</p>
  
       <div class="footer-social">
         <a href="https://instagram.com/barbaralc_design" target="_blank" aria-label="Instagram">
@@ -144,7 +125,7 @@
       <h4>Navegação</h4>
       <a href="index.html">Home</a>
       <a href="servicos.html">Serviços</a>
-      <a href="portfolio.html">Portfólio</a>
+      <a href="portfolio.html">Projetos</a>
       <a href="sobre.html">Sobre</a>
       <a href="contato.html">Contato</a>
     </div>
@@ -152,9 +133,8 @@
     <!-- CTA -->
     <div class="footer-cta">
       <h4>Vamos trabalhar juntas?</h4>
-      <p>Transformo sua ideia em um site que gera clientes reais. Vamos conversar?</p>
-      <a href="contato.html" class="btn">🚀 Solicitar projeto</a>
-      <!----<p class="footer-urgency">⚡ Agenda limitada para novos projetos este mês</p>
+      <p>Entre em contato para oportunidades profissionais e projetos.</p>
+      <a href="contato.html" class="btn">Falar comigo</a>
     </div>
  
   </div>
